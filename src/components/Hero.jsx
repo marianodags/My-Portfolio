@@ -1,6 +1,13 @@
 import { ArrowRight } from "@phosphor-icons/react";
 
-const tools = ["GoHighLevel", "Codex", "Claude", "AI Automation", "Web Development", "CRM Systems"];
+const tools = [
+  ["GoHighLevel", "GHL", "#FF5A1F", "white"],
+  ["Codex", "C", "#111827", "white"],
+  ["Claude", "AI", "#D97757", "white"],
+  ["AI Automation", "AI", "#10A37F", "white"],
+  ["Web Development", "WEB", "#2563EB", "white"],
+  ["CRM Systems", "CRM", "#7C3AED", "white"],
+];
 
 export default function Hero() {
   return (
@@ -15,7 +22,7 @@ export default function Hero() {
         </div>
         <div className="mt-16 overflow-hidden border-t border-slate-200 pt-6" aria-label="Tools Mariano works with">
           <p className="mb-4 text-sm font-extrabold uppercase tracking-wider text-slate-500">Tools I work with</p>
-          <div className="marquee"><div className="marquee-track">{[...tools,...tools].map((tool,i)=><span key={tool+i} className="mr-3 inline-flex items-center gap-3 whitespace-nowrap rounded-xl border border-slate-200 bg-white px-4 py-3 font-bold shadow-sm"><span className="grid h-7 w-7 place-items-center rounded-lg bg-[#111827] text-[10px] text-white">{tool.slice(0,3).toUpperCase()}</span>{tool}</span>)}</div></div>
+          <div className="marquee"><div className="marquee-track">{[...tools,...tools].map(([tool,abbr,bg,fg],i)=><span key={tool+i} className="mr-3 inline-flex items-center gap-3 whitespace-nowrap rounded-xl border border-slate-200 bg-white px-4 py-3 font-bold shadow-sm"><span className="grid h-7 w-7 place-items-center rounded-lg text-[10px] font-black" style={{backgroundColor:bg,color:fg}}>{abbr}</span>{tool}</span>)}</div></div>
         </div>
       </div>
     </section>
