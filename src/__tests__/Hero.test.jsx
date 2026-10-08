@@ -9,6 +9,13 @@ describe("Hero component", () => {
     expect(screen.getByText(/I'm Mariano — a Statistical Analyst and Data Analyst/i)).toBeInTheDocument();
   });
 
+  it("renders avatar image with alt text", () => {
+    render(<Hero />);
+    const avatarImg = screen.getByAltText(/Mariano - Statistical Analyst & Data Analyst/i);
+    expect(avatarImg).toBeInTheDocument();
+    expect(avatarImg).toHaveAttribute("src", "/profile-avatar.svg");
+  });
+
   it("renders call-to-action buttons", () => {
     render(<Hero />);
     const viewProjectsLink = screen.getByRole("link", { name: /view projects/i });
