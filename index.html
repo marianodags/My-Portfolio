@@ -1,66 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mariano — AI Automation Specialist</title>
-<style>
-:root{--orange:#FF9030;--ink:#111827;--soft:#374151;--muted:#6B7280;--line:#E5E7EB;--bg:#F8FAFC;--white:#FFF;--orange-soft:#FFF4E9}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Poppins,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);font-size:18px;line-height:1.65}a{color:inherit;text-decoration:none}.root{min-height:100vh;background:var(--bg)}
-.sidebar{position:fixed;inset:0 auto 0 0;width:250px;background:var(--ink);color:#fff;padding:34px 24px;display:flex;flex-direction:column;z-index:20}.brand{display:flex;align-items:center;gap:12px;margin-bottom:54px}.brand-mark{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;background:var(--orange);color:var(--ink);font-weight:800;font-size:20px}.brand strong{font-size:21px}.brand span{display:block;color:#AEB6C4;font-size:12px}.nav{display:grid;gap:8px}.nav a{min-height:52px;padding:12px 14px;border-radius:12px;display:flex;align-items:center;gap:14px;color:#C7CDD7;font-weight:600}.nav a:hover,.nav a.active{background:rgba(255,144,48,.14);color:#fff}.nav a.active{box-shadow:inset 3px 0 var(--orange)}.icon{width:23px;height:23px;flex:0 0 23px}.sidebar-bottom{margin-top:auto;color:#9CA3AF;font-size:14px}.status{display:flex;gap:9px;align-items:center}.dot{width:9px;height:9px;border-radius:50%;background:var(--orange)}
-.main{margin-left:250px}.section{min-height:100vh;padding:96px clamp(28px,6vw,92px);display:flex;align-items:center}.hero{background:var(--white);position:relative;overflow:hidden}.hero:after{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-160px;border-radius:50%;background:var(--orange-soft)}.hero-inner{width:min(1100px,100%);position:relative;z-index:1}.eyebrow{display:inline-flex;align-items:center;gap:9px;padding:8px 13px;border-radius:999px;background:var(--orange-soft);color:#A84F00;font-weight:700;font-size:15px}.mini-dot{width:8px;height:8px;border-radius:50%;background:var(--orange)}h1{font-size:clamp(48px,7vw,88px);line-height:1.02;letter-spacing:-3px;max-width:900px;margin:24px 0 22px}h1 em{color:var(--orange);font-style:normal}.hero-copy{max-width:730px;color:var(--soft);font-size:22px;line-height:1.6}.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}.btn{min-height:56px;padding:13px 21px;border-radius:12px;border:2px solid var(--ink);display:inline-flex;align-items:center;justify-content:center;gap:10px;font-weight:800}.btn.primary{background:var(--orange);border-color:var(--orange)}.btn.secondary{background:#fff}
-.tool-strip{margin-top:62px;border-top:1px solid var(--line);padding-top:24px;overflow:hidden}.tool-label{color:var(--muted);font-size:14px;font-weight:800;letter-spacing:.6px;text-transform:uppercase;margin-bottom:14px}.marquee{overflow:hidden;mask-image:linear-gradient(to right,transparent,black 8%,black 92%,transparent)}.track{width:max-content;display:flex;gap:14px;animation:scroll 28s linear infinite}.tool{display:flex;align-items:center;gap:10px;padding:11px 16px;border:1px solid var(--line);border-radius:12px;background:#fff;font-weight:750;white-space:nowrap}.tool-logo{width:28px;height:28px;border-radius:8px;display:grid;place-items:center;background:var(--ink);color:#fff;font-size:12px;font-weight:900}.tool:nth-child(4n+1) .tool-logo{background:var(--orange);color:var(--ink)}@keyframes scroll{to{transform:translateX(-50%)}}
-.content-section{background:var(--bg)}.container{width:min(1100px,100%)}.section-head{max-width:760px;margin-bottom:42px}.kicker{color:var(--orange);font-weight:850;font-size:15px;text-transform:uppercase;letter-spacing:1px}h2{margin:8px 0 12px;font-size:clamp(36px,5vw,58px);line-height:1.1;letter-spacing:-2px}.lead{color:var(--soft);font-size:20px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 10px 35px rgba(17,24,39,.045)}.card-number{color:var(--orange);font-weight:900;font-size:14px}.card h3{font-size:25px;margin:10px 0 8px}.card p{color:var(--soft);margin:0}.service-icon{width:52px;height:52px;display:grid;place-items:center;border-radius:14px;background:var(--orange-soft);color:#A84F00;margin-bottom:14px}.about-layout{display:grid;grid-template-columns:1.15fr .85fr;gap:52px;align-items:start}.about-panel{background:var(--ink);color:#fff;border-radius:22px;padding:34px}.fact{padding:17px 0;border-bottom:1px solid rgba(255,255,255,.13)}.fact:last-child{border:0}.fact strong{display:block;color:var(--orange);font-size:14px;text-transform:uppercase;letter-spacing:.7px}.contact{background:var(--ink);color:#fff}.contact .lead{color:#D1D5DB}.contact-box{display:grid;grid-template-columns:1.2fr .8fr;gap:40px;align-items:end}.contact-link{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.15);color:#F3F4F6;font-weight:650}.contact-cta{padding:30px;border-radius:20px;background:#1F2937}.footer{margin-left:250px;background:var(--ink);color:#9CA3AF;padding:24px 7%;font-size:14px}
-@media(max-width:900px){.sidebar{width:78px;padding:20px 12px}.brand{justify-content:center;margin-bottom:34px}.brand-text,.nav-label,.sidebar-bottom{display:none}.brand-mark{width:48px;height:48px}.nav a{justify-content:center;padding:12px}.main,.footer{margin-left:78px}.section{padding:76px 6vw}.about-layout,.contact-box{grid-template-columns:1fr}}
-@media(max-width:620px){body{font-size:17px}.sidebar{width:100%;height:70px;inset:auto 0 0;padding:8px 10px;flex-direction:row;align-items:center;justify-content:space-around;box-shadow:0 -8px 28px rgba(0,0,0,.14)}.brand,.sidebar-bottom{display:none}.nav{width:100%;grid-template-columns:repeat(5,1fr);gap:3px}.nav a{min-height:54px;border-radius:10px}.nav a.active{box-shadow:inset 0 -3px var(--orange)}.main,.footer{margin-left:0}.section{min-height:auto;padding:72px 22px}.hero{min-height:calc(100vh - 70px);padding-top:70px;padding-bottom:90px}h1{letter-spacing:-2px}.hero-copy{font-size:19px}.grid{grid-template-columns:1fr}.btn{width:100%}.tool-strip{margin-top:44px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.track{animation:none}}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mariano — AI Automation Specialist, GoHighLevel CRM Builder, and Web Developer." />
+  <title>Mariano — AI Automation Specialist</title>
 </head>
 <body>
-<div class="root">
-<aside class="sidebar" aria-label="Main navigation">
-<a class="brand" href="#home" aria-label="Mariano home"><div class="brand-mark">M</div><div class="brand-text"><strong>Mariano</strong><span>AI Automation Specialist</span></div></a>
-<nav class="nav">
-<a href="#home" class="active">⌂ <span class="nav-label">Home</span></a>
-<a href="#projects">▣ <span class="nav-label">Project</span></a>
-<a href="#services">◈ <span class="nav-label">Services</span></a>
-<a href="#about">● <span class="nav-label">About</span></a>
-<a href="#contact">✉ <span class="nav-label">Contact</span></a>
-</nav>
-<div class="sidebar-bottom"><div class="status"><span class="dot"></span> Available for projects</div></div>
-</aside>
-<main class="main">
-<section id="home" class="section hero"><div class="hero-inner">
-<div class="eyebrow"><span class="mini-dot"></span> AI Automation • GHL • Web Development</div>
-<h1>I build <em>smarter systems</em> that work for you.</h1>
-<p class="hero-copy">I'm Mariano — an AI Automation Specialist, GoHighLevel CRM builder, and web developer. I turn repetitive work into streamlined systems, clean client experiences, and practical automations.</p>
-<div class="actions"><a class="btn primary" href="#projects">View Projects →</a><a class="btn secondary" href="#contact">Let's Work Together</a></div>
-<div class="tool-strip" aria-label="Tools Mariano works with"><div class="tool-label">Tools I work with</div><div class="marquee"><div class="track">
-<div class="tool"><span class="tool-logo">GHL</span> GoHighLevel</div><div class="tool"><span class="tool-logo">C</span> Codex</div><div class="tool"><span class="tool-logo">AI</span> Claude</div><div class="tool"><span class="tool-logo">AI</span> AI Automation</div><div class="tool"><span class="tool-logo">WEB</span> Web Development</div><div class="tool"><span class="tool-logo">CRM</span> CRM Systems</div>
-<div class="tool"><span class="tool-logo">GHL</span> GoHighLevel</div><div class="tool"><span class="tool-logo">C</span> Codex</div><div class="tool"><span class="tool-logo">AI</span> Claude</div><div class="tool"><span class="tool-logo">AI</span> AI Automation</div><div class="tool"><span class="tool-logo">WEB</span> Web Development</div><div class="tool"><span class="tool-logo">CRM</span> CRM Systems</div>
-</div></div></div>
-</div></section>
-<section id="projects" class="section content-section"><div class="container"><div class="section-head"><div class="kicker">Selected work</div><h2>Projects built to solve real problems.</h2><p class="lead">A portfolio section ready for Mariano's actual case studies, screenshots, metrics, and client outcomes.</p></div><div class="grid">
-<article class="card"><div class="card-number">01 / CRM</div><h3>GoHighLevel Client System</h3><p>CRM pipelines, workflows, lead capture, follow-ups, calendars, and automations designed around a client's sales process.</p></article>
-<article class="card"><div class="card-number">02 / AI</div><h3>AI Lead Automation</h3><p>Automated lead handling that helps qualify inquiries, route conversations, and reduce repetitive manual tasks.</p></article>
-<article class="card"><div class="card-number">03 / WEB</div><h3>Conversion-Focused Website</h3><p>Responsive websites with clear messaging, strong calls to action, and connected lead-generation workflows.</p></article>
-<article class="card"><div class="card-number">04 / SYSTEMS</div><h3>Business Automation</h3><p>Connected systems that move information between tools, trigger actions, and keep operations organized.</p></article>
-</div></div></section>
-<section id="services" class="section content-section"><div class="container"><div class="section-head"><div class="kicker">What I do</div><h2>Services that make work simpler.</h2><p class="lead">From CRM setup to AI workflows and websites, each service is focused on saving time and improving the customer journey.</p></div><div class="grid">
-<article class="card"><div class="service-icon">✦</div><h3>AI Automation</h3><p>Design practical AI-assisted workflows for lead handling, content, customer support, and repetitive operations.</p></article>
-<article class="card"><div class="service-icon">▣</div><h3>GoHighLevel / GHL</h3><p>CRM builds, pipelines, workflows, forms, calendars, funnels, snapshots, and client communication systems.</p></article>
-<article class="card"><div class="service-icon">&lt;/&gt;</div><h3>Web Development</h3><p>Modern, responsive websites and landing pages that are easy to understand, navigate, and connect to business systems.</p></article>
-<article class="card"><div class="service-icon">⊕</div><h3>Systems & Integrations</h3><p>Connect tools and processes so data moves where it needs to go without unnecessary manual work.</p></article>
-</div></div></section>
-<section id="about" class="section content-section"><div class="container about-layout"><div><div class="kicker">About Mariano</div><h2>Technology should remove friction — not add it.</h2><p class="lead">Mariano combines automation, CRM building, AI tools, and web development to create systems that are useful in the real world.</p><p>His approach is simple: understand the business first, map the process, remove repetitive steps, then build a system that people can actually use. This section can later be expanded with Mariano's story, experience, certifications, industries served, and client testimonials.</p></div><div class="about-panel"><div class="fact"><strong>Specialty</strong>AI automation + CRM systems</div><div class="fact"><strong>Platform</strong>GoHighLevel / GHL</div><div class="fact"><strong>Build</strong>Websites + landing pages</div><div class="fact"><strong>Focus</strong>Simple, useful, scalable systems</div></div></div></section>
-<section id="contact" class="section contact"><div class="container contact-box"><div><div class="kicker">Contact</div><h2>Have a process that should be automated?</h2><p class="lead">Tell Mariano what you're trying to improve. Let's turn the messy part into a cleaner system.</p><div class="actions"><a class="btn primary" href="mailto:hello@mariano.dev">Start a Conversation →</a></div></div><div class="contact-cta"><p><strong>Let's connect</strong></p><a class="contact-link" href="mailto:hello@mariano.dev">✉ hello@mariano.dev</a><a class="contact-link" href="#home">↗ Back to top</a></div></div></section>
-</main>
-<footer class="footer">© 2026 Mariano. AI Automation Specialist • GHL CRM Builder • Web Developer</footer>
-</div>
-<script>
-const links=[...document.querySelectorAll('.nav a')],sections=[...document.querySelectorAll('main section')];
-const observer=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting)links.forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+entry.target.id))}),{rootMargin:'-35% 0px -55% 0px',threshold:0});
-sections.forEach(section=>observer.observe(section));
-</script>
+  <div id="root"></div>
+  <script type="module" src="/src/main.jsx"></script>
 </body>
 </html>
