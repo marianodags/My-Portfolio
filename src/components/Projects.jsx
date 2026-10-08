@@ -1,7 +1,7 @@
 const projects=[
-["01 / CRM","GoHighLevel Client System","CRM pipelines, workflows, lead capture, follow-ups, calendars, and automations built around a client's sales process."],
-["02 / AI","AI Lead Automation","Automated lead handling that helps qualify inquiries, route conversations, and reduce repetitive manual tasks."],
-["03 / WEB","Conversion-Focused Website","Responsive websites with clear messaging, strong calls to action, and connected lead-generation workflows."],
-["04 / SYSTEMS","Business Automation","Connected systems that move information between tools, trigger actions, and keep operations organized."]
+["01 / STATISTICS","Statistical Analysis","Statistical methods applied to summarize data, identify patterns, measure relationships, and support evidence-based conclusions."],
+["02 / DATA","Data Analysis","Clean, organize, analyze, and interpret datasets to answer questions and produce reliable findings."],
+["03 / VISUALIZATION","Data Visualization","Clear charts, dashboards, and visual reports that make complex data easier to understand and communicate."],
+["04 / REPORTING","Statistical Reporting","Well-structured statistical tables, reports, presentations, and analytical briefs for decision-making and research."]
 ];
-export default function Projects(){return <section id="projects" className="section-pad"><div className="section-wrap"><div className="section-head"><p className="kicker">Selected work</p><h2>Projects built to solve real problems.</h2><p>A portfolio section ready for Mariano's actual case studies, screenshots, metrics, and client outcomes.</p></div><div className="card-grid">{projects.map(([n,t,d])=><article className="portfolio-card" key={t}><span className="kicker">{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div></div></section>}
+export default function Projects(){return <section id="projects" className="section-pad"><div className="section-wrap"><div className="section-head"><p className="kicker">Selected work</p><h2>Statistical analysis and data projects.</h2><p>Examples of data analysis, statistical reporting, visualization, and research work that turn information into useful insights.</p></div><div className="card-grid">{projects.map(([n,t,d])=><article className="portfolio-card" key={t}><span className="kicker">{n}</span><h3>{t}</h3><p>{d}</p></article>)}</div></div></section>}
