@@ -20,7 +20,12 @@ export default function Hero() {
           <a href="#projects" className="inline-flex min-h-14 items-center justify-center gap-2 rounded-xl bg-[#FF9030] px-6 font-extrabold text-[#111827]">View Projects <ArrowRight size={21}/></a>
           <a href="#contact" className="inline-flex min-h-14 items-center justify-center rounded-xl border-2 border-[#111827] px-6 font-extrabold">Let's Work Together</a>
         </div>
-        <div className="mt-16 overflow-hidden border-t border-slate-200 pt-6" aria-label="Tools Mariano works with">
+        <div className="mt-7 grid max-w-4xl grid-cols-1 gap-2 sm:grid-cols-3">
+          <div className="rounded-xl border border-slate-200 bg-white px-4 py-3"><strong className="block text-lg">Official Statistics</strong><span className="text-xs font-semibold text-slate-500">Data processing & analysis</span></div>
+          <div className="rounded-xl border border-slate-200 bg-white px-4 py-3"><strong className="block text-lg">Economic Data</strong><span className="text-xs font-semibold text-slate-500">PPA & GDP insights</span></div>
+          <div className="rounded-xl border border-slate-200 bg-white px-4 py-3"><strong className="block text-lg">Data Tools</strong><span className="text-xs font-semibold text-slate-500">SQL • Python • R • BI</span></div>
+        </div>
+        <div className="mt-12 overflow-hidden border-t border-slate-200 pt-6" aria-label="Tools Mariano works with">
           <p className="mb-4 text-sm font-extrabold uppercase tracking-wider text-slate-500">Tools I work with</p>
           <div className="marquee"><div className="marquee-track">{[...tools,...tools].map(([tool,abbr,bg,fg],i)=><span key={tool+i} className="mr-3 inline-flex items-center gap-3 whitespace-nowrap rounded-xl border border-slate-200 bg-white px-4 py-3 font-bold shadow-sm"><span className="grid h-7 w-7 place-items-center rounded-lg text-[10px] font-black" style={{backgroundColor:bg,color:fg}}>{abbr}</span>{tool}</span>)}</div></div>
         </div>
