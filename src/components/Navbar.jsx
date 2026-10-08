@@ -20,7 +20,7 @@ export default function Navbar() {
     <aside className="fixed bottom-0 left-0 z-50 w-full border-t border-white/10 bg-[#111827] text-white lg:top-0 lg:w-[250px] lg:border-t-0 lg:border-r lg:px-6 lg:py-8">
       <a href="#home" className="hidden items-center gap-3 lg:mb-12 lg:flex">
         <img src="/profile avatar.png" alt="Mariano profile avatar" className="h-12 w-12 rounded-full object-cover ring-2 ring-white/10" />
-        <span><strong className="block text-xl">Mariano <span className="verified-badge" aria-label="Verified">✓</span></strong><small className="text-xs text-slate-400">AI Automation Specialist</small></span>
+        <span><strong className="block text-xl">Mariano <span className="verified-badge" aria-label="Verified">✓</span></strong><small className="text-xs text-slate-400">Statistical Analyst / Data Analyst</small></span>
       </a>
       <nav className="mx-auto grid max-w-md grid-cols-5 gap-1 p-2 lg:max-w-none lg:grid-cols-1 lg:gap-2 lg:p-0" aria-label="Main navigation">
         {items.map(([Icon, label, href]) => (
