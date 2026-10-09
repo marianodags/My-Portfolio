@@ -1,6 +1,36 @@
 import { EnvelopeSimple, ArrowUpRight } from "@phosphor-icons/react";
-<<<<<<< Updated upstream
-export default function Contact(){return <section id="contact" className="section-pad"><div className="contact-grid"><div><p className="kicker">Contact</p><h2>Have data that needs to be understood?</h2><p className="lead-copy text-slate-300">Tell me what you're trying to analyze. Let's turn your data into clear findings, visualizations, and useful insights.</p><a href="mailto:mqdagaang@gmail.com" className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-xl bg-[#FF9030] px-6 font-extrabold text-[#111827]">Start a Conversation <ArrowUpRight size={21}/></a></div><div className="rounded-2xl bg-[#1F2937] p-7"><p className="font-bold">Let's connect</p><a className="contact-link" href="mailto:mqdagaang@gmail.com"><EnvelopeSimple size={22}/>mqdagaang@gmail.com</a><a className="contact-link" href="./index.html">← Back to home</a></div></div><footer className="mt-16 border-t border-white/10 pt-6 text-sm text-slate-400">© 2026 Mariano. Statistical Analyst • Data Analyst</footer></section>}
-=======
-export default function Contact(){return <section id="contact" className="section-pad"><div className="contact-grid"><div><p className="kicker">Contact</p><h2>Have data that needs to be understood?</h2><p className="lead-copy text-slate-300">Tell Mariano what you're trying to analyze. Let's turn your data into clear findings, visualizations, and useful insights.</p><a href="mailto:mqdagaang@gmail.com" className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-xl bg-[#FF9030] px-6 font-extrabold text-[#111827]">Start a Conversation <ArrowUpRight size={21}/></a></div><div className="rounded-2xl bg-[#1F2937] p-7"><p className="font-bold">Let's connect</p><a className="contact-link" href="mqdagaang@gmail.com"><EnvelopeSimple size={22}/>mqdagaang@gmail.com</a><a className="contact-link" href="#home">↑ Back to top</a></div></div><footer className="mt-16 border-t border-white/10 pt-6 text-sm text-slate-400">© 2026 Mariano. Statistical Analyst • Data Analyst</footer></section>}
->>>>>>> Stashed changes
+
+export default function Contact() {
+  return (
+    <section id="contact" className="section-pad">
+      <div className="contact-grid">
+        <div>
+          <p className="kicker">Contact</p>
+          <h2>Have data that needs to be understood?</h2>
+          <p className="lead-copy text-slate-300">
+            Tell me what you're trying to analyze. Let's turn your data into clear findings, visualizations, and useful insights.
+          </p>
+          <a
+            href="mailto:mqdagaang@gmail.com"
+            className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-xl bg-[#FF9030] px-6 font-extrabold text-[#111827]"
+          >
+            Start a Conversation <ArrowUpRight size={21} />
+          </a>
+        </div>
+        <div className="rounded-2xl bg-[#1F2937] p-7">
+          <p className="font-bold">Let's connect</p>
+          <a className="contact-link" href="mailto:mqdagaang@gmail.com">
+            <EnvelopeSimple size={22} />
+            mqdagaang@gmail.com
+          </a>
+          <a className="contact-link" href="./index.html">
+            ← Back to home
+          </a>
+        </div>
+      </div>
+      <footer className="mt-16 border-t border-white/10 pt-6 text-sm text-slate-400">
+        © 2026 Mariano. Statistical Analyst • Data Analyst
+      </footer>
+    </section>
+  );
+}
