@@ -15,7 +15,7 @@ describe("Projects component",()=>{
     [
       "Provincial Economic Performance Dashboard",
       "Sales Performance Analysis",
-      "Exploratory Data Analysis (Python)",
+      "Exploratory Data Analysis (EDA) with Python",
       "Population & Demographic Analysis",
       "Interactive Data Application"
     ].forEach(title=>expect(screen.getByRole("heading",{name:title})).toBeInTheDocument());

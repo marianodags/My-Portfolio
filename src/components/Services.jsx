@@ -13,7 +13,7 @@ export default function Services({ headingLevel = "h1" }) {
       <div className="section-wrap">
         <div className="section-head">
           <p className="kicker">What I do</p>
-          <Heading>Data analysis, statistics, and visualization.</Heading>
+          <Heading>Statistical analysis, reporting, and data visualization.</Heading>
           <p>From data cleaning to statistical analysis and dashboards, each service is focused on producing clear, accurate, and useful insights.</p>
         </div>
         <div className="card-grid">

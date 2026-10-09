@@ -5,7 +5,7 @@ import Services from "../components/Services";
 describe("Services component", () => {
   it("renders services header and cards", () => {
     render(<Services />);
-    expect(screen.getByRole("heading", { level: 1, name: "Data analysis, statistics, and visualization." })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "Statistical analysis, reporting, and data visualization." })).toBeInTheDocument();
     expect(screen.getByText("What I do")).toBeInTheDocument();
     expect(screen.getByText("Statistical Analysis")).toBeInTheDocument();
     expect(screen.getByText("Data Analysis")).toBeInTheDocument();
