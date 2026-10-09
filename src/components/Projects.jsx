@@ -99,12 +99,14 @@ function ProjectCard({project}) {
   </article>;
 }
 
-export default function Projects() {
+export default function Projects({ headingLevel = "h1" }) {
+  const Heading = headingLevel;
+
   return <section id="projects" className="section-pad">
     <div className="section-wrap">
       <div className="section-head">
         <p className="kicker">Selected work & portfolio demos</p>
-        <h2>Analysis with a clear purpose.</h2>
+        <Heading>Analysis with a clear purpose.</Heading>
         <p>These project previews use static charts and tables for now. Synthetic examples are clearly labeled; the provincial economic summary uses reported 2025 PPA figures. Interactive filters and live data can be added later.</p>
       </div>
       <div className="card-grid project-grid">{projects.map(project=><ProjectCard project={project} key={project.id}/>)}</div>

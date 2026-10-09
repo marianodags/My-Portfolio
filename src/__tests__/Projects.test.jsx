@@ -6,7 +6,7 @@ describe("Projects component",()=>{
   it("renders the projects heading and explains the static-data approach",()=>{
     render(<Projects/>);
     expect(screen.getByText("Selected work & portfolio demos")).toBeInTheDocument();
-    expect(screen.getByText("Analysis with a clear purpose.")).toBeInTheDocument();
+    expect(screen.getByRole("heading", { level: 1, name: "Analysis with a clear purpose." })).toBeInTheDocument();
     expect(screen.getByText(/static charts and tables for now/i)).toBeInTheDocument();
   });
 
