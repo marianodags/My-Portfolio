@@ -20,6 +20,12 @@ export default function Projects() {
         <div className="card-grid">
           {projects.map(([number,title,description,tags,impact1,impact2]) => (
             <article className="portfolio-card case-card" key={title}>
+              <div className="project-preview" aria-hidden="true">
+                <span>{number}</span>
+                <div className="project-preview-bars">
+                  {[38,52,44,66,59,78,71,86,64,92].map((height, index) => <i key={index} style={{ height: `${height}%` }} />)}
+                </div>
+              </div>
               <span className="kicker">{number}</span>
               <h3>{title}</h3>
               <p>{description}</p>

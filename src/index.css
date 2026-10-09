@@ -73,6 +73,10 @@ main{min-width:0}
 .metric span{display:block;font-size:11px;color:#747984;font-weight:700;margin-top:4px}
 .mini-bars{height:84px;display:flex;align-items:end;gap:7px;padding:9px 4px 0;margin-top:10px;border-bottom:1px solid var(--line)}
 .mini-bars i{display:block;flex:1;border-radius:6px 6px 0 0;background:linear-gradient(180deg,#f9a45d,#f28a2e);min-height:12px}
+.project-preview{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;padding:10px 12px;border:1px solid rgba(23,35,61,.12);border-radius:14px;background:linear-gradient(135deg,rgba(255,255,255,.8),rgba(255,172,95,.18));margin-bottom:18px}
+.project-preview>span{font-size:11px;font-weight:900;letter-spacing:1.3px;color:#a95e23}
+.project-preview-bars{display:flex;align-items:flex-end;gap:5px;height:38px;width:min(140px,55%)}
+.project-preview-bars i{display:block;flex:1;border-radius:7px 7px 0 0;background:linear-gradient(180deg,#fbbf7d,#f28a2e)}
 .case-meta{display:flex;flex-wrap:wrap;gap:7px;margin:13px 0 15px}
 .case-tag{padding:5px 8px;border-radius:999px;background:rgba(255,255,255,.6);border:1px solid var(--line);color:#505866;font-size:11px;font-weight:800}
 .case-impact{margin-top:auto;padding-top:13px;border-top:1px solid var(--line);display:flex;gap:20px}
