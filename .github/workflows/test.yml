@@ -1,4 +1,4 @@
-name: Portfolio Tests
+name: Portfolio Checks
 
 on:
   push:
@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 jobs:
-  test:
+  test-and-build:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -25,3 +25,5 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm test
+      - name: Build production site
+        run: npm run build
