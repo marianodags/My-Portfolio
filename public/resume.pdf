@@ -1,5 +1,4 @@
 %PDF-1.4
-% Portfolio resume
 1 0 obj
 << /Type /Catalog /Pages 2 0 R >>
 endobj
@@ -16,45 +15,149 @@ endobj
 << /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
 endobj
 6 0 obj
-<< /Length 2138 >>
+<< /Length 5375 >>
 stream
-BT /F2 20 Tf 52 748 Td (MARIANO Q. DAGA-ANG JR.) Tj ET
-BT /F2 11 Tf 52 727 Td (STATISTICAL ANALYST | DATA ANALYST) Tj ET
-BT /F1 9 Tf 52 706 Td (Email: mqdagaang@gmail.com  |  GitHub: github.com/marianodags) Tj ET
-BT /F1 9 Tf 52 692 Td (LinkedIn: linkedin.com/in/mariano-q-daga-ang-jr-566185286/) Tj ET
-BT /F2 12 Tf 52 660 Td (PROFESSIONAL SUMMARY) Tj ET
-BT /F1 9 Tf 52 642 Td (Statistical Analyst and Computer Engineering graduate with experience supporting official) Tj ET
-BT /F1 9 Tf 52 629 Td (statistics, data validation, industry classification, economic analysis, and reporting.) Tj ET
-BT /F1 9 Tf 52 616 Td (Focused on turning complex data into reliable tables, clear visualizations, and useful insights.) Tj ET
-BT /F2 12 Tf 52 584 Td (PROFESSIONAL EXPERIENCE) Tj ET
-BT /F2 10 Tf 52 566 Td (Statistical Analyst \(COSW\) | Philippine Statistics Authority - Zamboanga del Norte) Tj ET
-BT /F1 9 Tf 52 548 Td (- Collect, process, validate, and organize statistical and administrative data.) Tj ET
-BT /F1 9 Tf 52 535 Td (- Support establishment listing and Philippine Standard Industrial Classification \(PSIC\).) Tj ET
-BT /F1 9 Tf 52 522 Td (- Contribute to Provincial Product Accounts \(PPA\) and provincial GDP analysis.) Tj ET
-BT /F1 9 Tf 52 509 Td (- Prepare statistical tables, industry growth/contribution analysis, dashboards, infographics,) Tj ET
-BT /F1 9 Tf 52 496 Td (  presentations, and other materials to communicate statistical findings.) Tj ET
-BT /F2 12 Tf 52 464 Td (TECHNICAL SKILLS) Tj ET
-BT /F1 9 Tf 52 446 Td (Analytics: Data cleaning, validation, exploratory analysis, descriptive statistics, reporting) Tj ET
-BT /F1 9 Tf 52 433 Td (Tools: SQL, Python, R, SPSS, Power BI, Microsoft Excel) Tj ET
-BT /F1 9 Tf 52 420 Td (Technical foundations: Git/GitHub, data documentation, database and ETL concepts) Tj ET
-BT /F2 12 Tf 52 388 Td (EDUCATION) Tj ET
-BT /F2 10 Tf 52 370 Td (Computer Engineering - Graduate) Tj ET
-BT /F2 12 Tf 52 338 Td (ADDITIONAL INFORMATION) Tj ET
-BT /F1 9 Tf 52 320 Td (Location: Zamboanga del Norte, Philippines) Tj ET
-BT /F1 9 Tf 52 307 Td (Portfolio: marianodags.github.io/My-Portfolio/) Tj ET
+BT
+0.12 0.16 0.23 rg
+/F2 17 Tf 48 754 Td (MARIANO JR QUITONG DAGA-ANG) Tj
+-48 -754 Td
+0.12 0.16 0.23 rg
+/F2 10 Tf 48 732 Td (DATA ANALYST  |  STATISTICAL ANALYST) Tj
+-48 -732 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 716 Td (Dipolog City, Zamboanga del Norte  |  0948-453-3934  |  mqdagaang@gmail.com) Tj
+-48 -716 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 704.5 Td (LinkedIn: linkedin.com/in/mariano-q-daga-ang-jr-566185286/) Tj
+-48 -704.5 Td
+0.90 0.38 0.10 rg
+/F2 10 Tf 48 693 Td (PROFESSIONAL SUMMARY) Tj
+-48 -693 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 678 Td (Data and statistical analyst with experience at the Philippine Statistics Authority \(PSA\) in) Tj
+-48 -678 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 666.5 Td (economic and administrative data preparation, validation, analysis, and reporting. Supports) Tj
+-48 -666.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 655 Td (Provincial Product Accounts \(PPA\) and provincial GDP compilation; translates datasets into) Tj
+-48 -655 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 643.5 Td (statistical tables, reports, dashboards, infographics, and stakeholder presentations.) Tj
+-48 -643.5 Td
+0.90 0.38 0.10 rg
+/F2 10 Tf 48 632 Td (TECHNICAL SKILLS) Tj
+-48 -632 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 617 Td (Analytics: Data cleaning, validation, transformation, EDA, trend analysis, economic statistics) Tj
+-48 -617 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 605.5 Td (Excel: Pivot Tables, XLOOKUP | SQL: JOINs, GROUP BY, aggregations \(developing\)) Tj
+-48 -605.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 594 Td (Power BI / Tableau \(developing\) | Python \(basic\) | MySQL / PostgreSQL \(learning\)) Tj
+-48 -594 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 582.5 Td (Other: PSIC industry classification, reporting, C/C++, embedded C, AUTOSAR, Git) Tj
+-48 -582.5 Td
+0.90 0.38 0.10 rg
+/F2 10 Tf 48 571 Td (PROFESSIONAL EXPERIENCE) Tj
+-48 -571 Td
+0.12 0.16 0.23 rg
+/F2 9.3 Tf 48 556 Td (Statistical Analyst \(COSW\)  |  Philippine Statistics Authority, Zamboanga del Norte) Tj
+-48 -556 Td
+0.12 0.16 0.23 rg
+/F1 8 Tf 48 543 Td (Jan 2024 ∫w^~)ﬁw Present  |  Provincial Product Accounts \(PPA\)) Tj
+-48 -543 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 532 Td *È›y¯ßy“ Collect, process, validate, and transform LGU and establishment administrative data.) Tj
+-48 -532 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 520.5 Td +ßuÁ‚ùÁb Classify establishments using the Philippine Standard Industrial Classification \(PSIC\).) Tj
+-48 -520.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 509 Td +ßuÁ‚ùÁb Compute industry-level revenue and value-added estimates; support provincial GDP compilation) Tj
+-48 -509 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 497.5 Td (  aligned with the Philippine System of National Accounts \(PSNA\).) Tj
+-48 -497.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 486 Td +ßuÁ‚ùÁb Analyze sector growth and contributions; prepare statistical tables, reports, dashboards,) Tj
+-48 -486 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 474.5 Td (  infographics, social cards, and presentations for stakeholders and policymakers.) Tj
+-48 -474.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 463 Td +ßuÁ‚ùÁb Conduct quality checks to improve data accuracy, consistency, and reporting reliability.) Tj
+-48 -463 Td
+0.12 0.16 0.23 rg
+/F2 9.3 Tf 48 451.5 Td (Software Development Engineer  |  FPT Software Philippines Inc.) Tj
+-48 -451.5 Td
+0.12 0.16 0.23 rg
+/F1 8 Tf 48 438.5 Td (Nov 2022 ∫w^~)ﬁw Jun 2023  |  Global Automotive and Manufacturing Philippines project) Tj
+-48 -438.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 427.5 Td +ßuÁ‚ùÁb Developed and tested embedded C software following AUTOSAR requirements.) Tj
+-48 -427.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 416 Td (∫w^~)ﬁv Applied MISRA-C and BARR-C coding standards; configured AUTOSAR modules using EB tresos.) Tj
+-48 -416 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 404.5 Td +ßuÁ‚ùÁb Worked with microcontrollers and CAN, I2C, and UART protocols; contributed to code reviews) Tj
+-48 -404.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 393 Td (  and technical documentation using Git-based version control.) Tj
+-48 -393 Td
+0.90 0.38 0.10 rg
+/F2 10 Tf 48 381.5 Td (SELECTED DATA PROJECTS) Tj
+-48 -381.5 Td
+0.12 0.16 0.23 rg
+/F2 9.3 Tf 48 366.5 Td (Provincial GDP Dashboard \(PPA Analysis\)) Tj
+-48 -366.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 353.5 Td (Planned dashboard of provincial GDP by sector, growth trends, contributions, and indicators.) Tj
+-48 -353.5 Td
+0.12 0.16 0.23 rg
+/F2 9.3 Tf 48 342 Td (Business Survey Data Analysis \(QSPBI Simulation\)) Tj
+-48 -342 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 329 Td (Analyzed sample business survey metrics, computed growth rates, and prepared an Excel dashboard.) Tj
+-48 -329 Td
+0.12 0.16 0.23 rg
+/F2 9.3 Tf 48 317.5 Td (SQL-Based Business Data Analysis \(In Progress\)) Tj
+-48 -317.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 304.5 Td (Practicing SQL JOINs, GROUP BY, and aggregations to examine revenue, expenses, and industry data.) Tj
+-48 -304.5 Td
+0.90 0.38 0.10 rg
+/F2 10 Tf 48 293 Td (EDUCATION) Tj
+-48 -293 Td
+0.12 0.16 0.23 rg
+/F2 9.3 Tf 48 278 Td (Bachelor of Science in Computer Engineering) Tj
+-48 -278 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 265 Td (Jose Rizal Memorial State University ∫w^~)ﬁw Main Campus  |  Graduated SY 202;ßuÁ‚ùÁS2022) Tj
+-48 -265 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 253.5 Td (Senior High School: Dipolog Medical Center College Foundation Inc.; High School: Alberto Q.) Tj
+-48 -253.5 Td
+0.12 0.16 0.23 rg
+/F1 7.7 Tf 48 242 Td (Ubay Memorial Agro-Tech Science High School; Elementary: Olingan South Elementary School.) Tj
+-48 -242 Td
+ET
 endstream
 endobj
 xref
 0 7
 0000000000 65535 f 
-0000000028 00000 n 
-0000000077 00000 n 
-0000000134 00000 n 
-0000000270 00000 n 
-0000000340 00000 n 
-0000000415 00000 n 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000251 00000 n 
+0000000321 00000 n 
+0000000396 00000 n 
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-2604
+5823
 %%EOF
