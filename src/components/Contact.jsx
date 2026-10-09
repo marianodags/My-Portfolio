@@ -1,36 +1,3 @@
-import { EnvelopeSimple, ArrowUpRight } from "@phosphor-icons/react";
-
-export default function Contact() {
-  return (
-    <section id="contact" className="section-pad">
-      <div className="contact-grid">
-        <div>
-          <p className="kicker">Contact</p>
-          <h2>Have data that needs to be understood?</h2>
-          <p className="lead-copy text-slate-300">
-            Tell me what you're trying to analyze. Let's turn your data into clear findings, visualizations, and useful insights.
-          </p>
-          <a
-            href="mailto:mqdagaang@gmail.com"
-            className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-xl bg-[#FF9030] px-6 font-extrabold text-[#111827]"
-          >
-            Start a Conversation <ArrowUpRight size={21} />
-          </a>
-        </div>
-        <div className="rounded-2xl bg-[#1F2937] p-7">
-          <p className="font-bold">Let's connect</p>
-          <a className="contact-link" href="mailto:mqdagaang@gmail.com">
-            <EnvelopeSimple size={22} />
-            mqdagaang@gmail.com
-          </a>
-          <a className="contact-link" href="./index.html">
-            ← Back to home
-          </a>
-        </div>
-      </div>
-      <footer className="mt-16 border-t border-white/10 pt-6 text-sm text-slate-400">
-        © 2026 Mariano. Statistical Analyst • Data Analyst
-      </footer>
-    </section>
-  );
-}
+import {EnvelopeSimple,ArrowUpRight,LinkedinLogo,GithubLogo} from "@phosphor-icons/react";
+const socialLinks=[{label:"LinkedIn profile",href:"https://www.linkedin.com/in/mariano-q-daga-ang-jr-566185286/",Icon:LinkedinLogo},{label:"GitHub repositories",href:"https://github.com/marianodags?tab=repositories",Icon:GithubLogo}];
+export default function Contact(){return <section id="contact" className="section-pad"><div className="contact-grid"><div><p className="kicker">Contact</p><h2>Have a data question to solve?</h2><p className="lead-copy">I’m interested in opportunities involving statistical analysis, data preparation, reporting, and visualization. Reach out to discuss a role, project, or collaboration.</p><a href="mailto:mqdagaang@gmail.com" className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-xl bg-[#FF9030] px-6 font-extrabold text-[#111827]">Email Mariano <ArrowUpRight size={21}/></a></div><div className="contact-details"><p className="font-bold">Let’s connect</p><a className="contact-link" href="mailto:mqdagaang@gmail.com"><EnvelopeSimple size={22}/>mqdagaang@gmail.com</a>{socialLinks.map(({label,href,Icon})=><a className="contact-link" key={label} href={href} target="_blank" rel="noopener noreferrer"><Icon size={22}/>{label}<ArrowUpRight className="ml-auto" size={16}/></a>)}<a className="contact-link" href="./resume.pdf" download="Mariano-Daga-ang-Resume.pdf"><ArrowUpRight size={22}/>Download resume</a></div></div><footer className="mt-16 border-t border-white/10 pt-6 text-sm text-slate-400">© 2026 Mariano. Statistical Analyst · Data Analyst</footer></section>}

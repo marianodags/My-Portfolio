@@ -1,40 +1,40 @@
-# Mariano Portfolio
+# Mariano — Statistical Analyst & Data Analyst Portfolio
 
-A responsive, multi-page React + Vite + Tailwind CSS portfolio for Mariano, a Statistical Analyst, Data Analyst, and Data Visualization Specialist.
+A responsive, multi-page React + Vite + Tailwind CSS portfolio focused on statistical analysis, official statistics, economic data, reporting, and data visualization.
 
 ## Pages
+- `index.html` — Home, hero, skills, experience, and education
+- `projects.html` — Professional focus areas and clearly labeled portfolio project ideas
+- `services.html` — Analytics and reporting services
+- `about.html` — Professional background
+- `contact.html` — Email and professional links
 
-- `index.html` — Home
-- `projects.html` — Projects
-- `services.html` — Services
-- `about.html` — About
-- `contact.html` — Contact
-
-Each page has its own HTML entry and shares the same navigation, visual styling, and React page entry point. The navigation links between actual HTML pages, and the current page is highlighted in the sidebar.
+## Featured capabilities
+- Data cleaning, validation, and statistical workflows
+- Provincial economic indicators and GDP analysis through Provincial Product Accounts work
+- SQL, Python, R, SPSS, Excel, and Power BI in the analytics toolkit
+- Statistical reporting, dashboards, infographics, and presentations
+- Responsive navigation and clear contact/resume calls to action
 
 ## Run locally
-
 ```bash
 npm install
 npm run dev
 ```
 
-## Run tests
-
+## Tests and production build
 ```bash
 npm test
-```
-
-## Build
-
-```bash
 npm run build
 ```
 
-## Structure
+## Project structure
+- `src/components` — reusable portfolio sections
+- `src/components/Home.jsx` — home page composition
+- `src/page-entry.jsx` — selects the section rendered by each HTML page
+- `src/__tests__` — Vitest and React Testing Library tests
+- `src/index.css` — global design system and responsive styles
+- `public/mariano.jpg` — profile image
+- `public/resume.pdf` — downloadable one-page resume
 
-- `src/components` — reusable portfolio sections and navigation
-- `src/page-entry.jsx` — selects the page content from each HTML page's `data-page`
-- `src/__tests__` — unit and integration tests using Vitest and React Testing Library
-- `src/index.css` — Tailwind and global styles
-- `public/profile-avatar.svg` — profile avatar
+Project ideas are explicitly labeled so they are not mistaken for completed client or professional projects. Add repository/demo links and findings as each portfolio case study is completed.
