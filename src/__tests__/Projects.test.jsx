@@ -1,23 +1,4 @@
-import { render, screen } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
+import {render,screen} from "@testing-library/react";
+import {describe,it,expect} from "vitest";
 import Projects from "../components/Projects";
-
-describe("Projects component", () => {
-  it("renders the updated section heading", () => {
-    render(<Projects />);
-    expect(screen.getByText("Selected work / 01—04")).toBeInTheDocument();
-    expect(screen.getByText("Analysis with a clear purpose.")).toBeInTheDocument();
-  });
-
-  it("renders all project case-study cards", () => {
-    render(<Projects />);
-    ["Provincial Product Accounts", "Statistical Data Processing", "Economic Data Visualization", "Statistical Reporting"].forEach(title => {
-      expect(screen.getByText(title)).toBeInTheDocument();
-    });
-  });
-
-  it("provides a contact link from each project", () => {
-    render(<Projects />);
-    expect(screen.getAllByRole("link", { name: /discuss similar work/i })).toHaveLength(4);
-  });
-});
+describe("Projects component",()=>{it("renders the updated section heading",()=>{render(<Projects/>);expect(screen.getByText("Selected work & next builds")).toBeInTheDocument();expect(screen.getByText("Analysis with a clear purpose.")).toBeInTheDocument();});it("renders professional focus and suggested project cards",()=>{render(<Projects/>);["Provincial Economic Performance","Statistical Data Quality Workflow","Economic Data Storytelling","Sales Performance Analysis","Population & Demographic Trends"].forEach(title=>expect(screen.getByText(title)).toBeInTheDocument());expect(screen.getAllByText("Suggested next build")).toHaveLength(2);});it("links project cards to the GitHub repositories page",()=>{render(<Projects/>);expect(screen.getAllByRole("link",{name:/browse github projects/i})).toHaveLength(5);});});
