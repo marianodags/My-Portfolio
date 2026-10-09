@@ -25,6 +25,6 @@ describe("Hero component", () => {
   it("renders dashboard overview cards", () => {
     render(<Hero />);
     expect(screen.getByText("Data at a glance")).toBeInTheDocument();
-    expect(screen.getByText("Provincial Product Accounts")).toBeInTheDocument();
+    expect(screen.getByText(/Provincial Product Accounts/)).toBeInTheDocument();
   });
 });
