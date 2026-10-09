@@ -41,6 +41,7 @@ main{min-width:0}
 .contact-link{display:flex;align-items:center;gap:12px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.15);color:#f3f4f6;font-weight:650;font-size:14px}
 .marquee{overflow:hidden;mask-image:linear-gradient(to right,transparent,black 5%,black 95%,transparent)}
 .marquee-track{width:max-content;display:flex;animation:marquee 30s linear infinite}
+.marquee-group{display:flex;flex-shrink:0;gap:.75rem;padding-right:.75rem}
 .tool-chip{display:inline-flex;align-items:center;gap:10px;padding:10px 14px;border:1px solid var(--line);border-radius:13px;background:rgba(255,255,255,.7);font-size:14px;font-weight:750;white-space:nowrap}
 .tool-mark{display:grid;place-items:center;width:28px;height:28px;border-radius:9px;background:var(--ink);color:#fff;font-size:10px;font-weight:900}
 .hero-dashboard{padding-top:30px;padding-bottom:22px}
