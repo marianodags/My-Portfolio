@@ -102,3 +102,12 @@ main{min-width:0}
 .card-grid .portfolio-card:first-child{grid-column:span 2}
 #services .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
 @media(max-width:620px){.card-grid .portfolio-card:first-child{grid-column:span 1}#services .card-grid{grid-template-columns:1fr}}
+
+.profile-block{display:flex;flex-direction:column;align-items:center;margin:0 0 34px;padding:4px 0 24px;border-bottom:1px solid var(--line)}
+.profile-block .brand-link{display:flex;flex-direction:column;text-align:center;gap:10px;margin:0;padding:0;color:var(--ink)}
+.profile-block .brand-link img{width:76px;height:76px;box-shadow:0 8px 24px rgba(23,35,61,.12)}
+.profile-socials{display:flex;align-items:center;justify-content:center;gap:9px;margin-top:17px}
+.social-icon-link{display:inline-flex;width:38px;height:38px;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;background:rgba(255,255,255,.68);color:var(--ink);transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
+.social-icon-link:hover{background:var(--orange);border-color:var(--orange);color:#fff;transform:translateY(-2px)}
+.social-icon-link:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+@media(max-width:1023px){.profile-block{display:none}}
