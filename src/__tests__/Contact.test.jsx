@@ -1,13 +1,4 @@
-import { render, screen } from "@testing-library/react";
-import { describe, it, expect } from "vitest";
+import {render,screen} from "@testing-library/react";
+import {describe,it,expect} from "vitest";
 import Contact from "../components/Contact";
-
-describe("Contact component", () => {
-  it("renders contact CTA and email link", () => {
-    render(<Contact />);
-    expect(screen.getByText("Have data that needs to be understood?")).toBeInTheDocument();
-    const emailLinks = screen.getAllByRole("link", { name: /mqdagaang@gmail.com/i });
-    expect(emailLinks.length).toBeGreaterThan(0);
-    expect(emailLinks[0]).toHaveAttribute("href", "mailto:mqdagaang@gmail.com");
-  });
-});
+describe("Contact component",()=>{it("renders contact CTA, email, and professional links",()=>{render(<Contact/>);expect(screen.getByText("Have a data question to solve?")).toBeInTheDocument();const emailLinks=screen.getAllByRole("link",{name:/mqdagaang@gmail.com/i});expect(emailLinks.length).toBeGreaterThan(0);expect(emailLinks[0]).toHaveAttribute("href","mailto:mqdagaang@gmail.com");expect(screen.getByRole("link",{name:/linkedin profile/i})).toHaveAttribute("href","https://www.linkedin.com/in/mariano-q-daga-ang-jr-566185286/");expect(screen.getByRole("link",{name:/github repositories/i})).toHaveAttribute("href","https://github.com/marianodags?tab=repositories");});});
