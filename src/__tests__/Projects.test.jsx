@@ -30,7 +30,7 @@ describe("Projects component",()=>{
 
   it("labels illustrative datasets and keeps GitHub links available",()=>{
     render(<Projects/>);
-    expect(screen.getAllByText(/Synthetic demonstration data/)).toHaveLength(3);
+    expect(screen.getAllByText(/Synthetic demonstration data/)).toHaveLength(4);
     expect(screen.getByText(/not actual company sales/i)).toBeInTheDocument();
     expect(screen.getAllByRole("link",{name:/browse github projects/i})).toHaveLength(5);
   });
