@@ -11,8 +11,8 @@ describe("Hero component", () => {
 
   it("renders call-to-action links", () => {
     render(<Hero />);
-    expect(screen.getByRole("link", { name: /get in touch/i })).toHaveAttribute("href", "#contact");
-    expect(screen.getByRole("link", { name: /explore work/i })).toHaveAttribute("href", "#projects");
+    expect(screen.getByRole("link", { name: /get in touch/i })).toHaveAttribute("href", "./contact.html");
+    expect(screen.getByRole("link", { name: /explore work/i })).toHaveAttribute("href", "./projects.html");
   });
 
   it("renders the tools marquee", () => {
