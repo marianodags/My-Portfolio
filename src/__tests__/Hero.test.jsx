@@ -3,26 +3,28 @@ import { describe, it, expect } from "vitest";
 import Hero from "../components/Hero";
 
 describe("Hero component", () => {
-  it("renders main headline and bio", () => {
+  it("renders dashboard headline and bio", () => {
     render(<Hero />);
-    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(/I turn data into insights that support better decisions/i);
+    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(/Build insights.*Make data useful/i);
     expect(screen.getByText(/I'm Mariano — a Statistical Analyst and Data Analyst/i)).toBeInTheDocument();
   });
 
-  it("renders call-to-action buttons", () => {
+  it("renders call-to-action links", () => {
     render(<Hero />);
-    const viewProjectsLink = screen.getByRole("link", { name: /view projects/i });
-    const workTogetherLink = screen.getByRole("link", { name: /let's work together/i });
-
-    expect(viewProjectsLink).toHaveAttribute("href", "#projects");
-    expect(workTogetherLink).toHaveAttribute("href", "#contact");
+    expect(screen.getByRole("link", { name: /get in touch/i })).toHaveAttribute("href", "#contact");
+    expect(screen.getByRole("link", { name: /explore work/i })).toHaveAttribute("href", "#projects");
   });
 
-  it("renders tools ticker marquee", () => {
+  it("renders the tools marquee", () => {
     render(<Hero />);
-    const marqueeSection = screen.getByLabelText(/tools mariano works with/i);
-    expect(marqueeSection).toBeInTheDocument();
+    expect(screen.getByLabelText(/tools mariano works with/i)).toBeInTheDocument();
     expect(screen.getAllByText("Python").length).toBeGreaterThan(0);
     expect(screen.getAllByText("Power BI").length).toBeGreaterThan(0);
+  });
+
+  it("renders dashboard overview cards", () => {
+    render(<Hero />);
+    expect(screen.getByText("Data at a glance")).toBeInTheDocument();
+    expect(screen.getByText("Provincial Product Accounts")).toBeInTheDocument();
   });
 });
