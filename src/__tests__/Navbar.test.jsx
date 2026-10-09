@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar";
 describe("Navbar component", () => {
   it("renders the portfolio identity", () => {
     render(<Navbar />);
-    expect(screen.getByText(/Mariano/i)).toBeInTheDocument();
+    expect(screen.getAllByText(/Mariano/i).length).toBeGreaterThan(0);
     expect(screen.getByText(/Statistical Analyst/i)).toBeInTheDocument();
   });
 
