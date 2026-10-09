@@ -6,7 +6,7 @@ import { resolve } from "node:path";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: "./",
-  build: { rollupOptions: { input: { home: resolve(process.cwd(), "index.html"), projects: resolve(process.cwd(), "projects.html"), services: resolve(process.cwd(), "services.html"), about: resolve(process.cwd(), "about.html"), contact: resolve(process.cwd(), "contact.html") } } },
+  build: { rollupOptions: { input: { home: resolve(process.cwd(), "index.html"), projects: resolve(process.cwd(), "projects.html"), services: resolve(process.cwd(), "services.html"), about: resolve(process.cwd(), "about.html"), contact: resolve(process.cwd(), "contact.html"), provincialGdp: resolve(process.cwd(), "provincial-gdp.html"), pythonEda: resolve(process.cwd(), "python-eda.html"), sqlSales: resolve(process.cwd(), "sql-sales.html") } } },
   test: {
     globals: true,
     environment: "jsdom",

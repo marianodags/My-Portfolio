@@ -6,8 +6,18 @@ import Projects from "./components/Projects.jsx";
 import Services from "./components/Services.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
+import CaseStudy from "./components/CaseStudy.jsx";
 import "./index.css";
-const pages = { home: Home, projects: Projects, services: Services, about: About, contact: Contact };
+const pages = {
+  home: Home,
+  projects: Projects,
+  services: Services,
+  about: About,
+  contact: Contact,
+  "provincial-gdp": () => <CaseStudy study="provincial-gdp" />,
+  "python-eda": () => <CaseStudy study="python-eda" />,
+  "sql-sales": () => <CaseStudy study="sql-sales" />,
+};
 const Content = pages[document.body.dataset.page || "home"] || Home;
 const root = document.getElementById("root");
 

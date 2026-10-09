@@ -1,8 +1,8 @@
-import {ArrowUpRight,GithubLogo} from "@phosphor-icons/react";
+import {ArrowUpRight, GithubLogo} from "@phosphor-icons/react";
 
 const projects = [
   {
-    id:"economy", category:"PROJECT 01 · PROVINCIAL GDP ANALYSIS", title:"Provincial Economic Performance Dashboard",
+    id:"economy", category:"PROJECT 01 · PROVINCIAL GDP ANALYSIS", title:"Provincial Economic Performance Dashboard", caseStudy:"provincial-gdp.html", codeLine:5,
     description:"Provincial Gross Domestic Product (GDP) analysis of output, economic indicators, sector growth, and contributions to overall economic growth.",
     question:"Which industries drive provincial GDP growth and economic performance?",
     tools:["PPA","Excel","Power BI (developing)","Statistics"], source:"Zamboanga del Norte PPA 2025 figures",
@@ -14,7 +14,7 @@ const projects = [
     tableRows:[["Services","+10.3%","+5.14 pp"],["Industry","−2.1%","−0.73 pp"],["Agriculture, forestry & fishing","+2.0%","−0.30 pp"]]
   },
   {
-    id:"sales", category:"PROJECT 02 · BUSINESS ANALYTICS", title:"Sales Performance Analysis",
+    id:"sales", category:"PROJECT 02 · BUSINESS ANALYTICS", title:"Sales Performance Analysis", caseStudy:"sql-sales.html", codeLine:17,
     description:"Track monthly revenue, order volume, and changes in sales to demonstrate a basic business performance workflow.",
     question:"When did sales peak, and how did order volume change?",
     tools:["SQL (developing)","Excel","Power BI (developing)"], source:"Synthetic demonstration data",
@@ -26,7 +26,7 @@ const projects = [
     tableRows:[["January","₱42,000","420"],["February","₱48,000","465"],["March","₱45,000","450"],["April","₱61,000","625"]]
   },
   {
-    id:"eda", category:"PROJECT 03 · DATA EXPLORATION", title:"Exploratory Data Analysis (EDA) with Python",
+    id:"eda", category:"PROJECT 03 · DATA EXPLORATION", title:"Exploratory Data Analysis (EDA) with Python", caseStudy:"python-eda.html", codeLine:29,
     description:"A synthetic-data example of data cleaning and exploratory data analysis (EDA): profiling a dataset, checking missing values, and summarizing fields before deeper analysis.",
     question:"Which variables need attention before analysis?",
     tools:["Python (basic)","Pandas","EDA","Data cleaning"], source:"Synthetic demonstration dataset",
@@ -38,7 +38,7 @@ const projects = [
     tableRows:[["Age","21 rows","34.6 years"],["Income","68 rows","₱28,400"],["Region","5 rows","North"],["Spend","74 rows","₱2,180"]]
   },
   {
-    id:"population", category:"PROJECT 04 · DEMOGRAPHICS", title:"Population & Demographic Analysis",
+    id:"population", category:"PROJECT 04 · DEMOGRAPHICS", title:"Population & Demographic Analysis", codeLine:41,
     description:"Compare population across sample local areas and show how demographic data can be organized for planning.",
     question:"How does population vary between the sample areas?",
     tools:["Python (basic)","Excel","Power BI (developing)"], source:"Synthetic demonstration data",
@@ -50,7 +50,7 @@ const projects = [
     tableRows:[["Area A","140,000","43.6%"],["Area B","85,000","26.5%"],["Area C","54,000","16.8%"],["Area D","42,000","13.1%"]]
   },
   {
-    id:"app", category:"PROJECT 05 · DATA APPLICATION", title:"Interactive Data Application",
+    id:"app", category:"PROJECT 05 · DATA APPLICATION", title:"Interactive Data Application", codeLine:53,
     description:"A static preview of a future data app with summary KPIs, regional comparisons, and a structured results table.",
     question:"How could users compare performance across regions?",
     tools:["React","JavaScript","SQL concepts (developing)","Charts"], source:"Synthetic demonstration data",
@@ -95,7 +95,10 @@ function ProjectCard({project}) {
     <div className="demo-table-heading"><strong>Sample data table</strong><span>{project.tableRows.length} rows</span></div>
     <StaticTable headers={project.tableHeaders} rows={project.tableRows}/>
     <p className="demo-note">{project.note}</p>
-    <a className="project-detail-link" href="https://github.com/marianodags?tab=repositories" target="_blank" rel="noopener noreferrer">Browse GitHub projects <GithubLogo size={15}/><ArrowUpRight size={15}/></a>
+    <div className="project-links">
+      {project.caseStudy && <a className="project-detail-link" href={project.caseStudy}>Read case study <ArrowUpRight size={15}/></a>}
+      <a className="project-detail-link" href={`https://github.com/marianodags/My-Portfolio/blob/main/src/components/Projects.jsx#L${project.codeLine}`} target="_blank" rel="noopener noreferrer">View demo code <GithubLogo size={15}/><ArrowUpRight size={15}/></a>
+    </div>
   </article>;
 }
 
