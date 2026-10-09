@@ -6,9 +6,9 @@ const tools = [
 ];
 
 const projects = [
-  ["Provincial Product Accounts", "GDP performance, industry growth and contributions", "#projects"],
-  ["Statistical Data Processing", "Validation, classification and reliable outputs", "#projects"],
-  ["Economic Data Visualization", "Dashboards, charts and statistical storytelling", "#projects"],
+  ["Provincial Product Accounts", "GDP performance, industry growth and contributions", "./projects.html"],
+  ["Statistical Data Processing", "Validation, classification and reliable outputs", "./projects.html"],
+  ["Economic Data Visualization", "Dashboards, charts and statistical storytelling", "./projects.html"],
 ];
 
 export default function Hero() {
@@ -22,8 +22,8 @@ export default function Hero() {
             <p>Reliable statistics, thoughtful analysis, and clear visualizations that help people understand what the data is saying.</p>
           </div>
           <div className="hero-actions">
-            <a href="#contact">Get in touch <ArrowUpRight size={17}/></a>
-            <a className="secondary" href="#projects">Explore work</a>
+            <a href="./contact.html">Get in touch <ArrowUpRight size={17}/></a>
+            <a className="secondary" href="./projects.html">Explore work</a>
           </div>
         </div>
 
@@ -63,13 +63,13 @@ export default function Hero() {
           <article className="dashboard-card">
             <h2><span className="card-icon"><Database size={20}/></span> About</h2>
             <p>Computer Engineering graduate and Statistical Analyst working with official statistics, economic data, and reporting.</p>
-            <div className="dashboard-list"><a href="#about"><span>More about Mariano</span><ArrowUpRight size={17}/></a></div>
+            <div className="dashboard-list"><a href="./about.html"><span>More about Mariano</span><ArrowUpRight size={17}/></a></div>
           </article>
           <article className="dashboard-card">
             <h2><span className="card-icon"><FileText size={20}/></span> Services</h2>
             <p>Practical support from data preparation to final communication.</p>
             <div className="dashboard-list">
-              <a href="#services"><span>Statistical analysis</span><ArrowUpRight size={17}/></a>
+              <a href="./services.html"><span>Statistical analysis</span><ArrowUpRight size={17}/></a>
               <a href="#services"><span>Data visualization</span><ArrowUpRight size={17}/></a>
               <a href="#services"><span>Reports & dashboards</span><ArrowUpRight size={17}/></a>
             </div>
