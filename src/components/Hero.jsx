@@ -19,6 +19,7 @@ export default function Hero() {
           <div>
             <p className="kicker">Statistical Analyst · Data Analyst</p>
             <h1>Build insights.<br/><em>Make data useful.</em></h1>
+            <p>I&apos;m Mariano — a Statistical Analyst and Data Analyst.</p>
             <p>Reliable statistics, thoughtful analysis, and clear visualizations that help people understand what the data is saying.</p>
           </div>
           <div className="hero-actions">
