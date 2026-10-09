@@ -1,3 +1,5 @@
+import { ArrowUpRight } from "@phosphor-icons/react";
+
 const projects = [
   ["01 / PROVINCIAL ECONOMY","Provincial Product Accounts","Economic data analysis and visualization supporting the presentation of provincial GDP performance, growth, industry contributions, and key economic indicators.",["PPA","GDP","Economic Analysis"],["GDP","Economic indicator"],["16+","Industry indicators"]],
   ["02 / DATA PROCESSING","Statistical Data Processing","Collecting, validating, cleaning, classifying, and transforming datasets into reliable statistical tables and analytical outputs.",["Data Cleaning","Validation","Classification"],["ETL","Data workflow"],["QA","Data validation"]],
@@ -10,9 +12,9 @@ export default function Projects() {
     <section id="projects" className="section-pad">
       <div className="section-wrap">
         <div className="section-head">
-          <p className="kicker">Selected work</p>
-          <h2>Statistical analysis and data projects.</h2>
-          <p>Examples of data analysis, statistical reporting, visualization, and research work that turn information into useful insights.</p>
+          <p className="kicker">Selected work / 01—04</p>
+          <h2>Analysis with a clear purpose.</h2>
+          <p>Representative work across economic statistics, data quality, visualization, and reporting.</p>
         </div>
         <div className="card-grid">
           {projects.map(([number,title,description,tags,impact1,impact2]) => (
@@ -25,6 +27,7 @@ export default function Projects() {
                 <div><strong>{impact1[0]}</strong><span>{impact1[1]}</span></div>
                 <div><strong>{impact2[0]}</strong><span>{impact2[1]}</span></div>
               </div>
+              <a className="project-detail-link" href="#contact">Discuss similar work <ArrowUpRight size={15}/></a>
             </article>
           ))}
         </div>
