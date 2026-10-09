@@ -11,7 +11,7 @@ export default function Contact() {
             Tell me what you're trying to analyze. Let's turn your data into clear findings, visualizations, and useful insights.
           </p>
           <a
-            href="mailto:mqdagaang@gmail.com"
+            href="mailto:hello@mariano.dev"
             className="mt-8 inline-flex min-h-14 items-center gap-2 rounded-xl bg-[#FF9030] px-6 font-extrabold text-[#111827]"
           >
             Start a Conversation <ArrowUpRight size={21} />
@@ -19,9 +19,9 @@ export default function Contact() {
         </div>
         <div className="rounded-2xl bg-[#1F2937] p-7">
           <p className="font-bold">Let's connect</p>
-          <a className="contact-link" href="mailto:mqdagaang@gmail.com">
+          <a className="contact-link" href="mailto:hello@mariano.dev">
             <EnvelopeSimple size={22} />
-            mqdagaang@gmail.com
+            hello@mariano.dev
           </a>
           <a className="contact-link" href="./index.html">
             ← Back to home
