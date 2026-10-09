@@ -25,6 +25,6 @@ export default function Navbar() {
     <nav className="mx-auto grid max-w-md grid-cols-5 gap-1 p-2 lg:max-w-none lg:grid-cols-1 lg:gap-2 lg:p-0" aria-label="Main navigation">
       {items.map(([Icon,label,href]) => <a key={label} href={href} aria-current={current===href ? "page" : undefined} className={`nav-item flex min-h-14 flex-col items-center justify-center gap-1 rounded-xl px-3 transition lg:flex-row lg:justify-start lg:gap-3 ${current===href ? "nav-item-active" : ""}`}><Icon size={23} weight="regular" aria-hidden="true" /><span className="text-xs font-semibold lg:text-base">{label}</span></a>)}
     </nav>
-    <div className="sidebar-footer hidden lg:block"><div className="flex items-center gap-2 text-sm"><span className="h-2 w-2 rounded-full bg-[#FF9030]" />Open to data opportunities</div><p className="mt-6 text-xs">© 2026 Mariano</p></div>
+    <div className="sidebar-footer hidden lg:block"><div className="flex items-center gap-2 text-sm"><span className="h-2 w-2 rounded-full bg-[#FF9030]" />Open to data opportunities</div></div>
   </aside>;
 }

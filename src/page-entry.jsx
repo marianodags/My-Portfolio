@@ -7,6 +7,7 @@ import Services from "./components/Services.jsx";
 import About from "./components/About.jsx";
 import Contact from "./components/Contact.jsx";
 import CaseStudy from "./components/CaseStudy.jsx";
+import Footer from "./components/Footer.jsx";
 import "./index.css";
 const pages = {
   home: Home,
@@ -27,12 +28,13 @@ if (!root) {
 
 ReactDOM.createRoot(root).render(
   <React.StrictMode>
-    <div className="min-h-screen text-[#111827]">
+    <div className="site-shell min-h-screen text-[#111827]">
       <a className="skip-link" href="#main-content">Skip to main content</a>
       <Navbar />
-      <main id="main-content" className="lg:pl-[250px]" tabIndex={-1}>
+      <main id="main-content" className="flex-1 lg:pl-[250px]" tabIndex={-1}>
         <Content />
       </main>
+      <Footer />
     </div>
   </React.StrictMode>
 );
