@@ -2,10 +2,10 @@ import {ArrowUpRight,GithubLogo} from "@phosphor-icons/react";
 
 const projects = [
   {
-    id:"economy", category:"PROJECT 01 · ECONOMICS", title:"Provincial Economic Performance Dashboard",
-    description:"A compact view of provincial output, sector growth, and contributions to overall economic growth.",
-    question:"Which sectors are driving the province's economic performance?",
-    tools:["PPA","Excel","Power BI","Statistics"], source:"Zamboanga del Norte PPA 2025 figures",
+    id:"economy", category:"PROJECT 01 · PROVINCIAL GDP ANALYSIS", title:"Provincial Economic Performance Dashboard",
+    description:"Provincial Gross Domestic Product (GDP) analysis of output, economic indicators, sector growth, and contributions to overall economic growth.",
+    question:"Which industries drive provincial GDP growth and economic performance?",
+    tools:["PPA","Excel","Power BI (developing)","Statistics"], source:"Zamboanga del Norte PPA 2025 figures",
     note:"Figures shown are reported 2025 PPA results. Contributions may not sum exactly because of rounding.",
     metrics:[["GDP","₱130.26B"],["GDP growth","4.10%"]],
     chartTitle:"Contribution to GDP growth · percentage points",
@@ -17,7 +17,7 @@ const projects = [
     id:"sales", category:"PROJECT 02 · BUSINESS ANALYTICS", title:"Sales Performance Analysis",
     description:"Track monthly revenue, order volume, and changes in sales to demonstrate a basic business performance workflow.",
     question:"When did sales peak, and how did order volume change?",
-    tools:["SQL","Excel","Power BI"], source:"Synthetic demonstration data",
+    tools:["SQL (developing)","Excel","Power BI (developing)"], source:"Synthetic demonstration data",
     note:"Illustrative sample values only—not actual company sales.",
     metrics:[["Total revenue","₱196K"],["Total orders","1,960"]],
     chartTitle:"Monthly revenue · ₱ thousands",
@@ -26,10 +26,10 @@ const projects = [
     tableRows:[["January","₱42,000","420"],["February","₱48,000","465"],["March","₱45,000","450"],["April","₱61,000","625"]]
   },
   {
-    id:"eda", category:"PROJECT 03 · DATA EXPLORATION", title:"Exploratory Data Analysis (Python)",
-    description:"Preview how a dataset can be profiled, checked for missing values, and summarized before deeper analysis.",
+    id:"eda", category:"PROJECT 03 · DATA EXPLORATION", title:"Exploratory Data Analysis (EDA) with Python",
+    description:"A synthetic-data example of data cleaning and exploratory data analysis (EDA): profiling a dataset, checking missing values, and summarizing fields before deeper analysis.",
     question:"Which variables need attention before analysis?",
-    tools:["Python","Pandas","EDA","Data cleaning"], source:"Synthetic demonstration dataset",
+    tools:["Python (basic)","Pandas","EDA","Data cleaning"], source:"Synthetic demonstration dataset",
     note:"Illustrative profiling results created to demonstrate the portfolio layout.",
     metrics:[["Rows reviewed","1,000"],["Missing cells","4.2%"]],
     chartTitle:"Missing values by field · % of rows",
@@ -41,7 +41,7 @@ const projects = [
     id:"population", category:"PROJECT 04 · DEMOGRAPHICS", title:"Population & Demographic Analysis",
     description:"Compare population across sample local areas and show how demographic data can be organized for planning.",
     question:"How does population vary between the sample areas?",
-    tools:["Python","Excel","Power BI"], source:"Synthetic demonstration data",
+    tools:["Python (basic)","Excel","Power BI (developing)"], source:"Synthetic demonstration data",
     note:"All population counts below are fictional examples, not official census estimates.",
     metrics:[["Areas compared","4"],["Combined population","321K"]],
     chartTitle:"Illustrative population · thousands",
@@ -53,7 +53,7 @@ const projects = [
     id:"app", category:"PROJECT 05 · DATA APPLICATION", title:"Interactive Data Application",
     description:"A static preview of a future data app with summary KPIs, regional comparisons, and a structured results table.",
     question:"How could users compare performance across regions?",
-    tools:["React","JavaScript","SQL concepts","Charts"], source:"Synthetic demonstration data",
+    tools:["React","JavaScript","SQL concepts (developing)","Charts"], source:"Synthetic demonstration data",
     note:"This is a static mock-up for now; filters and live data are not connected.",
     metrics:[["Records","1,248"],["Regions","4"]],
     chartTitle:"Sample revenue by region · ₱ thousands",
@@ -107,7 +107,7 @@ export default function Projects({ headingLevel = "h1" }) {
       <div className="section-head">
         <p className="kicker">Selected work & portfolio demos</p>
         <Heading>Analysis with a clear purpose.</Heading>
-        <p>These project previews use static charts and tables for now. Synthetic examples are clearly labeled; the provincial economic summary uses reported 2025 PPA figures. Interactive filters and live data can be added later.</p>
+        <p>Data Analyst portfolio examples in provincial economic analysis, statistical data exploration, and dashboard reporting. These previews use static charts and tables for now: synthetic examples are clearly labeled, while the provincial economic summary uses reported 2025 PPA figures. Interactive filters and live data can be added later.</p>
       </div>
       <div className="card-grid project-grid">{projects.map(project=><ProjectCard project={project} key={project.id}/>)}</div>
     </div>
