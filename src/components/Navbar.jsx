@@ -17,7 +17,7 @@ export default function Navbar() {
   const current = window.location.pathname.split("/").pop() || "index.html";
   return <aside className="portfolio-sidebar fixed bottom-0 left-0 z-50 w-full border-t lg:bottom-auto lg:top-0 lg:h-screen lg:w-[250px] lg:border-r lg:border-t-0" aria-label="Main navigation">
     <div className="profile-block hidden lg:flex">
-      <a href="./index.html" className="brand-link items-center gap-3"><img src="./profile-avatar.svg" alt="Mariano profile avatar" className="h-12 w-12 rounded-full object-cover ring-2 ring-white/70" /><span><strong className="block text-xl">Mariano</strong><small className="text-xs">Statistical Analyst</small></span></a>
+      <a href="./index.html" className="brand-link items-center gap-3"><img src="./mariano.jpg" alt="Mariano profile avatar" className="h-12 w-12 rounded-full object-cover ring-2 ring-white/70" /><span><strong className="block text-xl">Mariano</strong><small className="text-xs">Statistical Analyst</small></span></a>
       <div className="profile-socials" aria-label="Social media links">{socials.map(({label,href,Icon}) => <a key={label} href={href} target="_blank" rel="noopener noreferrer" className="social-icon-link" aria-label={label} title={label}><Icon size={21} weight="fill" aria-hidden="true" /></a>)}</div>
     </div>
     <nav className="mx-auto grid max-w-md grid-cols-5 gap-1 p-2 lg:max-w-none lg:grid-cols-1 lg:gap-2 lg:p-0" aria-label="Main navigation">

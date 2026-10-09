@@ -1,10 +1,10 @@
 import { ArrowUpRight } from "@phosphor-icons/react";
 
 const projects = [
-  ["01 / PROVINCIAL ECONOMY","Provincial Product Accounts","Economic data analysis and visualization supporting the presentation of provincial GDP performance, growth, industry contributions, and key economic indicators.",["PPA","GDP","Economic Analysis"],["GDP","Economic indicator"],["16+","Industry indicators"]],
-  ["02 / DATA PROCESSING","Statistical Data Processing","Collecting, validating, cleaning, classifying, and transforming datasets into reliable statistical tables and analytical outputs.",["Data Cleaning","Validation","Classification"],["ETL","Data workflow"],["QA","Data validation"]],
-  ["03 / VISUALIZATION","Economic Data Visualization","Turning complex statistical results into dashboards, charts, infographics, and presentations that decision-makers can understand quickly.",["Power BI","Excel","Infographics"],["BI","Dashboards"],["Visual","Storytelling"]],
-  ["04 / REPORTING","Statistical Reporting","Producing statistical tables, briefs, reports, presentations, and analytical materials that communicate findings clearly and accurately.",["Reports","Tables","Presentations"],["Clear","Communication"],["Evidence","Decision support"]]
+  ["01 / PROVINCIAL ECONOMY","Provincial Product Accounts","Supported the analysis and presentation of provincial GDP trends, industry contributions, and key economic indicators to help explain regional economic performance.",["PPA","GDP","Economic Analysis"],["Growth","Regional trends"],["16+","Indicators tracked"]],
+  ["02 / DATA PROCESSING","Statistical Data Processing","Collected, validated, cleaned, classified, and transformed raw data into reliable statistical tables and outputs ready for decision-making.",["Data Cleaning","Validation","Classification"],["Quality","Data integrity"],["Workflow","Structured output"]],
+  ["03 / VISUALIZATION","Economic Data Visualization","Turned statistical results into dashboards, charts, and visuals that made data easier to interpret and explain to stakeholders.",["Power BI","Excel","Infographics"],["Clear","Communication"],["Insights","Faster understanding"]],
+  ["04 / REPORTING","Statistical Reporting","Prepared concise reports, tables, and presentations that translated technical findings into actionable information for decision-makers.",["Reports","Tables","Presentations"],["Evidence","Decision support"],["Clarity","Strong communication"]]
 ];
 
 export default function Projects() {
@@ -12,6 +12,7 @@ export default function Projects() {
     <section id="projects" className="section-pad">
       <div className="section-wrap">
         <div className="section-head">
+          <p className="sr-only">Selected work</p>
           <p className="kicker">Selected work / 01—04</p>
           <h2>Analysis with a clear purpose.</h2>
           <p>Representative work across economic statistics, data quality, visualization, and reporting.</p>

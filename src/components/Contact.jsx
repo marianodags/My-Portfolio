@@ -8,7 +8,7 @@ export default function Contact() {
           <p className="kicker">Contact</p>
           <h2>Have data that needs to be understood?</h2>
           <p className="lead-copy text-slate-300">
-            Tell me what you're trying to analyze. Let's turn your data into clear findings, visualizations, and useful insights.
+            Tell me what you&apos;re trying to analyze. Let&apos;s turn your data into clear findings, visualizations, and useful insights.
           </p>
           <a
             href="mailto:hello@mariano.dev"
@@ -18,7 +18,7 @@ export default function Contact() {
           </a>
         </div>
         <div className="rounded-2xl bg-[#1F2937] p-7">
-          <p className="font-bold">Let's connect</p>
+          <p className="font-bold">Let&apos;s connect</p>
           <a className="contact-link" href="mailto:hello@mariano.dev">
             <EnvelopeSimple size={22} />
             hello@mariano.dev

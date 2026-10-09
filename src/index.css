@@ -50,8 +50,8 @@ main{min-width:0}
 .hero-topline h1{font-size:clamp(38px,5vw,72px);line-height:1.02;letter-spacing:-.055em;max-width:1000px;margin:0;color:var(--ink)}
 .hero-topline h1 em{font-style:normal;color:#b96625}
 .hero-topline p{margin:12px 0 0;color:#646b77;font-size:16px;max-width:900px}
-.hero-actions{display:flex;gap:10px;flex-shrink:0}
-.hero-actions a{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:10px 17px;border-radius:999px;background:var(--ink);color:white;font-size:13px;font-weight:800;white-space:nowrap;box-shadow:0 8px 20px rgba(23,35,61,.12)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:10px;flex-shrink:0}
+.hero-actions a{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:10px 17px;border-radius:999px;background:var(--ink);color:white;font-size:13px;font-weight:800;white-space:nowrap;box-shadow:0 8px 20px rgba(23,35,61,.12)}
 .hero-actions a.secondary{background:rgba(255,255,255,.6);border:1px solid var(--line);color:var(--ink);box-shadow:none}
 .tool-panel{display:grid;grid-template-columns:180px minmax(0,1fr);align-items:center;gap:18px;padding:12px 16px;border:1px solid rgba(23,35,61,.15);border-radius:22px;background:rgba(255,255,255,.55);box-shadow:0 10px 25px rgba(23,35,61,.035);overflow:hidden}
 .tool-panel-label{border-right:1px solid var(--line);padding-right:16px}

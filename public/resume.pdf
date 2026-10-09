@@ -1,0 +1,48 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 5 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 301 >>
+stream
+BT
+/F1 16 Tf
+72 740 Td
+(Mariano Daga-Ang Jr.) Tj
+0 -28 Td
+/F1 12 Tf
+(Statistical Analyst | Data Analyst) Tj
+0 -28 Td
+(Focused on statistical analysis, economic indicators, data cleaning, reporting, and dashboards.) Tj
+0 -22 Td
+(Email: hello@mariano.dev) Tj
+0 -22 Td
+(LinkedIn: www.linkedin.com/in/mariano-q-daga-ang-jr-566185286) Tj
+0 -22 Td
+(GitHub: github.com/marianodags) Tj
+ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000010 00000 n 
+0000000062 00000 n 
+0000000129 00000 n 
+0000000245 00000 n 
+0000000442 00000 n 
+0000000570 00000 n 
+trailer
+<< /Root 1 0 R /Size 6 >>
+startxref
+620
+%%EOF

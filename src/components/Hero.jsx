@@ -1,4 +1,4 @@
-import { ArrowUpRight, ChartLineUp, Database, ChartBar, FileText, Code } from "@phosphor-icons/react";
+import { ArrowUpRight, ChartLineUp, Database, ChartBar, FileText, Code, DownloadSimple, LinkedinLogo, GithubLogo } from "@phosphor-icons/react";
 
 const tools = [
   ["SPSS", "S", "#2563EB"], ["SQL", "SQL", "#17233d"], ["Python", "PY", "#3776AB"],
@@ -20,11 +20,14 @@ export default function Hero() {
             <p className="kicker">Statistical Analyst · Data Analyst</p>
             <h1>Build insights.<br/><em>Make data useful.</em></h1>
             <p>I&apos;m Mariano — a Statistical Analyst and Data Analyst.</p>
-            <p>Reliable statistics, thoughtful analysis, and clear visualizations that help people understand what the data is saying.</p>
+            <p>From official statistics and economic indicators to dashboards, reporting, and data storytelling, I turn complex information into clear, useful insights.</p>
           </div>
           <div className="hero-actions">
             <a href="./contact.html">Get in touch <ArrowUpRight size={17}/></a>
             <a className="secondary" href="./projects.html">Explore work</a>
+            <a className="secondary" href="./resume.pdf" target="_blank" rel="noreferrer">Download Resume <DownloadSimple size={17}/></a>
+            <a className="secondary" href="https://www.linkedin.com/in/mariano-q-daga-ang-jr-566185286/" target="_blank" rel="noreferrer"><LinkedinLogo size={17}/> LinkedIn</a>
+            <a className="secondary" href="https://github.com/marianodags" target="_blank" rel="noreferrer"><GithubLogo size={17}/> GitHub</a>
           </div>
         </div>
 
